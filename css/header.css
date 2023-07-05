@@ -1,0 +1,11 @@
+header{border: 4px solid blue;
+    background-image: url("../images/header.jpg"); background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width:100%;
+    height: auto;
+    }
+    #searchsection{
+    border: 3px greenyellow solid;
+    }
+    

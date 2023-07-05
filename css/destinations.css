@@ -1,0 +1,43 @@
+#descriptionsection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    #descriptionsection p {padding: 19px 35px;}
+    #destinationsection h2{font-family: Dancing Script; font-weight: bold; padding: 4px 35px;}
+    #descriptionsection p{font-family: 'Times New Roman', Times, serif; }
+    
+    
+    
+    
+    #photossection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    #photossection img{
+    height: 300px;
+    width: 300px;
+    }
+    
+    
+    
+    
+    .image-container {
+    position: relative;
+    margin: 0 auto;
+    }
+    .text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    }
+    .text-overlay p {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    }
+    
