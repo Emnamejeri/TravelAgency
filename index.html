@@ -23,26 +23,42 @@ rel="stylesheet"
 <body>
 <header>
 <div id="searchsection">
-<input name = "search" placeholder="search">
+<img src="./icons/search-white.svg" alt="Logo">
+<input name = "search" placeholder="search" id="searchbutton">
 <img src="./icons/globe-white.svg" alt="Logo">
-<button>Destinations</button>
-<button>Sign in</button>
+<button id="destinationbutton">Destinations</button>
+<button id="signbutton">Sign in</button>
 <div>
-<img src="./icons/three-bars-white.svg" alt="Menu" >
+<img src="./icons/three-bars-white.svg" alt="Menu">
 </div>
 </div>
-<div>
+<div id="bookingsection">
 <div>Year long travel</div>
 <h1>
 Book your next<br>
 destination
 </h1>
 <div>
-<input name = "country" list="countries" placeholder="Destinations">
+<h6>Destination</h6>
+<input name = "country" list="countries" placeholder="Select destination">
 <datalist id="countries"><option value="Tunisia"> <option value="Germany">
 <option value="Italy"> <option value="Costa Rica"> <option value="Japan">
 <option value="India"> <option value="Finland"> <option value="Russia"></option></datalist>
 </div>
+<div>
+    <h6>From</h6>
+    <input name = "departuredate"  placeholder="YYYY.MM.DD">
+    </div>
+    <div>
+        <h6>To</h6>
+        <input name = "arrivaldate"  placeholder="YYYY.MM.DD">
+        
+        </div>
+        <div>
+            <h6>Guests</h6>
+            <input name = "guestsnumber"  placeholder="2">
+            </div>
+            <img src="./icons/arrow-right.svg" alt="Menu">
 </div>
 </header>
 <section id="destinationsection">
