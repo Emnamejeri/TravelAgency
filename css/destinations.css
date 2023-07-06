@@ -1,41 +1,126 @@
-#descriptionsection{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    }
-    #descriptionsection p {padding: 19px 35px;}
-    #destinationsection h2{font-family: Dancing Script; font-weight: bold; padding: 4px 35px;}
-    #descriptionsection p{font-family: 'Times New Roman', Times, serif; }
-    
-    
-    
-    
-    #photossection{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    }
-    #photossection img{
-    height: 300px;
-    width: 300px;
-    }
-    
-    
-    .image-container {
-    position: relative;
-    margin: 0 auto;
-    }
-    .text-overlay {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    }
-    .text-overlay p {
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#descriptionsection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#descriptionsection p {
+  padding: 19px 35px;
+}
+
+#destinationsection h2 {
+  font-family: Dancing Script;
+  font-weight: bold;
+  padding: 4px 35px;
+}
+
+#descriptionsection p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#photossection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#photossection img {
+  height: 300px;
+  width: 300px;
+}
+
+.image-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+  #descriptionsection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #descriptionsection p {
+    padding: 19px 15px;
+  }
+
+  #destinationsection h2 {
+    padding: 4px 15px;
+  }
+
+  .text-overlay p {
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    }
-    
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #descriptionsection p {
+    padding: 19px 10px;
+  }
+
+  #destinationsection h2 {
+    padding: 4px 10px;
+  }
+
+  #photossection img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .text-overlay {
+    top: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #descriptionsection p {
+    padding: 19px 5px;
+  }
+
+  #destinationsection h2 {
+    padding: 4px 5px;
+  }
+
+  #photossection img {
+    height: 120px;
+    width: 90px;
+  }
+
+  #photossection {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added to center the images vertically */
+  }
+
+  .text-overlay {
+    top: 60%;
+  }
+}

@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 header {
   background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
@@ -24,6 +34,7 @@ header {
   margin-left: 45px;
   color: white;
 }
+
 #signbutton {
   border-radius: 20%;
   width: 60px;
@@ -50,22 +61,27 @@ header {
   margin-top: 350px;
   padding-left: 70px;
 }
+
 #destpart {
   display: flex;
   flex-direction: row;
 }
+
 #bookingsection h1 {
   color: white;
 }
+
 #bookingsection h6 {
   color: white;
   margin-right: 30px;
   font-size: 12px;
 }
+
 #bookingsection input {
   margin-right: 10px;
   height: 29px;
 }
+
 #bookingsection button {
   height: 29px;
   width: 60px;
@@ -73,4 +89,56 @@ header {
   border: none;
   border-radius: 20%;
   align-self: flex-end;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+  #bookingsection {
+    margin-top: 250px;
+    padding-left: 30px;
+  }
+
+  #bookingsection h6 {
+    margin-right: 15px;
+    font-size: 10px;
+  }
+
+  #bookingsection input {
+    margin-right: 5px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #bookingsection {
+    margin-top: 200px;
+    padding-left: 20px;
+  }
+
+  #bookingsection h6 {
+    margin-right: 10px;
+    font-size: 8px;
+  }
+
+  #bookingsection input {
+    margin-right: 3px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #bookingsection {
+    margin-top: 150px;
+    padding-left: 10px;
+  }
+
+  #bookingsection h6 {
+    margin-right: 5px;
+    font-size: 6px;
+  }
+
+  #bookingsection input {
+    margin-right: 2px;
+    height: 15px;
+  }
 }
