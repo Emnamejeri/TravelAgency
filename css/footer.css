@@ -1,11 +1,22 @@
-footer{display: flex; justify-content: space-around; align-items: baseline;
-    background-color: yellow; padding-top: 2rem; padding-bottom: 2rem; margin-top: 20px ;}
-    
-    
-    #email {
-    width: 400px;
-    }
-    #subscribebutton{background-color: rgb(144, 180, 92);}
-    
-    
-    a{color:black;}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: yellow;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 20px;
+}
+
+#email {
+  width: 400px;
+}
+
+#subscribebutton {
+  background-color: rgb(151, 228, 43);
+  border: none;
+}
+
+a {
+  color: black;
+}
