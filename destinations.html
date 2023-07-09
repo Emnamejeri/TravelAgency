@@ -12,110 +12,300 @@
     />
 
     <style>
-      img {
-        width: 200px;
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      #email {
+        width: 400px;
+      }
+
+      #subscribebutton {
+        background-color: rgb(151, 228, 43);
+        border: none;
+      }
+
+      a {
+        color: black;
+      }
+      #destinationsgallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      #intro {
+        text-align: center;
+        margin: 30px 60px;
+      }
+
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f7f442;
+      }
+
+      ul.navbar li {
+        float: left;
+      }
+
+      ul.navbar li a {
+        display: block;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 7px;
+        text-decoration: none;
+      }
+
+      ul.navbar li a:hover {
+        background-color: rgb(151, 228, 43);
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+      .card-img-top {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .card-text {
+        flex-grow: 1;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        background-color: #f7f442;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 20px;
       }
     </style>
   </head>
 
   <body>
-    <div>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="3000"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100"
-              src="./images/tunisphoto.jpg"
-              alt="First slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/tunisphoto2.jpg"
-              alt="Second slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/tunisphoto3.jpg"
-              alt="Third slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/tunisphoto4.jpg"
-              alt="Fourth slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/tunisphoto5.jpg"
-              alt="Fifth slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/tunisphoto8.jpg"
-              alt="Sixth slide"
-            />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-    </div>
-    <div>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div id="intro">
       <p>
-        "Embark on unforgettable journeys with our premier travel agency.
-        Discover breathtaking destinations that will leave you speechless. From
-        pristine beaches to majestic mountains, let us guide you to the most
-        captivating places on Earth. Experience world-class hospitality and
-        create memories that will last a lifetime. Start planning your dream
-        getaway with us today!"
+        "Embark on a <strong>unforgettable journeys</strong> with our premier
+        travel agency. Discover breathtaking destinations that will leave you
+        speechless. From pristine beaches to<strong> majestic mountains</strong
+        >, let us guide you to the most captivating places on Earth. Experience
+        world-class hospitality and create memories that will last a lifetime.
+        Start planning your <strong>dream getaway </strong>with us today!"
       </p>
     </div>
-    <div class="card text-center" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div id="destinationsgallery">
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/tunisphoto6.jpg"
+          class="card-img-top"
+          alt="photo of sidi bou said village"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Tunisia</h5>
+          <p class="card-text">
+            A North African country known for its rich history, diverse culture,
+            and beautiful Mediterranean coastline.
+          </p>
+          <a href="tunisia.html" target="_blank" class="btn btn-primary"
+            >Discover Tunisia</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/egyptphoto.jpg"
+          class="card-img-top"
+          alt="photo of pyramid and sphynx"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Egypt</h5>
+          <p class="card-text">
+            The land famous for its iconic pyramids, ancient civilizations, and
+            the majestic Nile River.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Egypt</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/greecephoto.jpg"
+          class="card-img-top"
+          alt="Greek village"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Greece</h5>
+          <p class="card-text">
+            A country known for its ancient ruins, beautiful islands, and
+            influential contributions to Western civilization.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Greece</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/indiaphoto.jpg"
+          class="card-img-top"
+          alt="Taj Mahal India"
+        />
+        <div class="card-body">
+          <h5 class="card-title">India</h5>
+          <p class="card-text">
+            Experience the vibrant colors, diverse cultures, and timeless
+            traditions of India, where ancient history meets modern dynamism.
+          </p>
+          <a href="#" class="btn btn-primary">Discover India</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/italyphoto.jpg"
+          class="card-img-top"
+          alt="photo of venice"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Italy</h5>
+          <p class="card-text">
+            Indulge in the captivating charm of Italy, where art, architecture,
+            and exquisite cuisine come together to create an unforgettable
+            journey.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Italy</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/japanphoto.jpg"
+          class="card-img-top"
+          alt="girl in komono dress japan"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Japan</h5>
+          <p class="card-text">
+            Discover the perfect blend of tradition and innovation in Japan,
+            where ancient temples, futuristic technology, and captivating
+            natural beauty await.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Japan</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/jordanphoto.jpg"
+          class="card-img-top"
+          alt="city of Petra"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Jordan</h5>
+          <p class="card-text">
+            Embark on a remarkable journey through time in Jordan, where ancient
+            wonders, breathtaking landscapes, and warm hospitality converge.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Jordan</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/peruphoto.jpg"
+          class="card-img-top"
+          alt="Machu Pichu"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Peru</h5>
+          <p class="card-text">
+            Uncover the mysteries of Peru, where awe-inspiring ruins, vibrant
+            indigenous cultures, and breathtaking landscapes await your
+            exploration.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Peru</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/australiaphoto.jpg"
+          class="card-img-top"
+          alt="sydney opera house"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Australia</h5>
+          <p class="card-text">
+            Embrace the boundless adventures of Australia, where stunning
+            landscapes, unique wildlife, and laid-back coastal vibes create an
+            unforgettable experience.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Australia</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/usaphoto.jpg"
+          class="card-img-top"
+          alt="San Francisco street"
+        />
+        <div class="card-body">
+          <h5 class="card-title">USA</h5>
+          <p class="card-text">
+            Experience the diverse wonders of the USA, from the iconic landmarks
+            of New York City to the natural splendors of the Grand Canyon, and
+            everything in between.
+          </p>
+          <a href="#" class="btn btn-primary">Discover USA</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/brazilphoto.jpg"
+          class="card-img-top"
+          alt="Rio de Janeiro Christ"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Brazil</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Brazil</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="./images/thailandphoto.jpg"
+          class="card-img-top"
+          alt="Thailand Beach"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Thailand</h5>
+          <p class="card-text">
+            Embark on an exotic adventure in Thailand, where golden temples,
+            pristine beaches, and tantalizing cuisine create a sensory delight
+            like no other.
+          </p>
+          <a href="#" class="btn btn-primary">Discover Thailand</a>
+        </div>
       </div>
     </div>
+
     <footer>
       <div id="Links">
         <h3>Links</h3>
-        <a href="" target="_blank">Home</a><br />
-        <a href="" target="_blank">Destinations</a><br />
+        <a href="index.html" target="_blank">Home</a><br />
+        <a href="destinations.html" target="_blank">Destinations</a><br />
         <a href="" target="_blank">About</a><br />
         <a href="" target="_blank">contact</a>
       </div>

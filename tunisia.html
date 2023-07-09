@@ -25,9 +25,40 @@
       #descriptionsection p {
         padding: 19px 35px;
       }
+
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f7f442;
+      }
+
+      ul.navbar li {
+        float: left;
+      }
+
+      ul.navbar li a {
+        display: block;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 7px;
+        text-decoration: none;
+      }
+
+      ul.navbar li a:hover {
+        background-color: rgb(151, 228, 43);
+      }
     </style>
   </head>
   <body>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <div>
       <div
         id="carouselExampleIndicators"
@@ -141,8 +172,8 @@
     <footer>
       <div id="Links">
         <h3>Links</h3>
-        <a href="" target="_blank">Home</a><br />
-        <a href="" target="_blank">Destinations</a><br />
+        <a href="index.html" target="_blank">Home</a><br />
+        <a href="destinations.html" target="_blank">Destinations</a><br />
         <a href="" target="_blank">About</a><br />
         <a href="" target="_blank">contact</a>
       </div>
