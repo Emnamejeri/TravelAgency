@@ -11,7 +11,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  background-color: yellow;
+  background-color: #ffd31d;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: 20px;
@@ -19,15 +19,20 @@ footer {
 
 #email {
   width: 400px;
+  height: 35px;
+  border: none;
 }
 
 #subscribebutton {
-  background-color: rgb(151, 228, 43);
+  background-color: #519259;
   border: none;
+  height: 35px;
+  color: antiquewhite;
 }
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
