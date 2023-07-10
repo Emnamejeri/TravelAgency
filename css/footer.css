@@ -21,6 +21,7 @@ footer {
   width: 400px;
   height: 35px;
   border: none;
+  border-radius: 5%;
 }
 
 #subscribebutton {
@@ -28,6 +29,7 @@ footer {
   border: none;
   height: 35px;
   color: antiquewhite;
+  border-radius: 5%;
 }
 
 a {
