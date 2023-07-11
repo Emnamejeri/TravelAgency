@@ -84,6 +84,51 @@
         border-radius: 10%;
         cursor: pointer;
       }
+      /* CSS For big monitor screens */
+      @media only screen and (min-width: 1200px) {
+        footer {
+          margin-top: 120px;
+        }
+      }
+
+      /* CSS styling for phone device */
+      @media only screen and (max-device-width: 480px) {
+        footer {
+          display: flex;
+          flex-direction: column;
+          padding-top: 5px;
+          padding-left: 10px;
+        }
+        #emailsection {
+          width: 200px;
+          height: 33px;
+          border: none;
+        }
+        #Links {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        #Links a {
+          padding-bottom: 3px;
+          font-size: 14px;
+        }
+        #newssection {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          font-size: 14px;
+        }
+
+        #subscribebutton {
+          background-color: #519259;
+          border: none;
+          height: 33px;
+          color: antiquewhite;
+          border-radius: 5%;
+        }
+      }
     </style>
   </head>
 
@@ -133,7 +178,7 @@
         </div>
       </div>
     </nav>
-    <div class="container form-container">
+    <div class="container">
       <h2>Contact Form</h2>
       <form action="contactform.html" method="GET">
         <div class="form-group">

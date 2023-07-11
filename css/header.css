@@ -14,10 +14,12 @@ header {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
-  margin: 0 auto;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: center;
 }
 
 #searchsection {
@@ -58,13 +60,14 @@ header {
 #bookingsection {
   display: flex;
   flex-direction: column;
-  margin-top: 350px;
-  padding-left: 70px;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
-#destpart {
+#bookingdetails {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #bookingsection h1 {
@@ -78,13 +81,16 @@ header {
 }
 
 #bookingsection input {
-  margin-right: 10px;
-  height: 29px;
+  margin-right: 12px;
+  height: 33px;
+  width: 180px;
+  text-align: center;
+  border-radius: 5%;
+  border: none;
 }
 
 #bookingsection button {
-  height: 29px;
-  width: 60px;
+  height: 33px;
   border: none;
   border-radius: 10%;
   display: flex;
@@ -94,53 +100,72 @@ header {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 991px) {
-  #bookingsection {
-    margin-top: 250px;
-    padding-left: 30px;
-  }
-
-  #bookingsection h6 {
-    margin-right: 15px;
-    font-size: 10px;
-  }
-
-  #bookingsection input {
-    margin-right: 5px;
-    height: 25px;
+/* CSS For big monitor screens */
+@media only screen and (min-width: 1200px) {
+  header {
+    height: 95vh;
+    padding-bottom: 20px;
   }
 }
-
-@media only screen and (max-width: 767px) {
+/* CSS styling for phone device */
+@media only screen and (max-device-width: 480px) {
+  header {
+    width: 100%;
+    height: 50vh;
+  }
   #bookingsection {
-    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 3px red solid;
+  }
+  #bookingdetails {
+    border: pink 3px solid;
+  }
+
+  #bookingsection h1 {
+    color: white;
+    font-weight: bold;
+  }
+  #bookingsection input {
+    border: blue 3px solid;
+  }
+  #bookingsection h6 {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #bookingsection button {
+    height: 33px;
+    border: none;
+    border-radius: 5%;
+  }
+}
+/* CSS styling for tablettes*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  header {
+    width: 100%;
+    height: 70vh;
+  }
+  #bookingsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding-left: 20px;
   }
 
-  #bookingsection h6 {
-    margin-right: 10px;
-    font-size: 8px;
+  #bookingsection h1 {
+    color: white;
+    font-weight: bold;
   }
-
   #bookingsection input {
-    margin-right: 3px;
-    height: 20px;
+    width: min-content;
+    margin-bottom: 20px;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  #bookingsection {
-    margin-top: 150px;
-    padding-left: 10px;
-  }
-
-  #bookingsection h6 {
-    margin-right: 5px;
-    font-size: 6px;
-  }
-
-  #bookingsection input {
-    margin-right: 2px;
-    height: 15px;
+  #bookingsection button {
+    height: 33px;
+    border: none;
+    border-radius: 5%;
+    margin-bottom: 20px;
   }
 }

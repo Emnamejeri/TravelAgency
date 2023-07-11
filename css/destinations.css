@@ -32,11 +32,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 #photossection img {
-  height: 300px;
-  width: 300px;
+  max-height: 400px;
+  max-width: 280px;
+  border-radius: 5%;
 }
 
 .image-container {
@@ -46,81 +48,62 @@ html {
 
 .text-overlay {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.cityname {
+  font-family: Dancing Script;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3px;
+  font-size: 25px;
+}
+.countryname {
+  font-family: Montserrat;
   color: white;
 }
-
-.text-overlay p {
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+/* CSS For big monitor screens */
+@media only screen and (min-width: 1200px) {
+  .image-container {
+    margin: 10px;
+  }
 }
-
-/* Media Queries */
-@media only screen and (max-width: 991px) {
+/* CSS styling for phone device */
+@media only screen and (max-device-width: 480px) {
   #descriptionsection {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  #descriptionsection p {
-    padding: 19px 15px;
-  }
-
-  #destinationsection h2 {
-    padding: 4px 15px;
-  }
-
-  .text-overlay p {
-    font-size: 15px;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  #descriptionsection p {
-    padding: 19px 10px;
-  }
-
-  #destinationsection h2 {
-    padding: 4px 10px;
-  }
-
-  #photossection img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .text-overlay {
-    top: 70%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #descriptionsection p {
-    padding: 19px 5px;
-  }
-
-  #destinationsection h2 {
-    padding: 4px 5px;
-  }
-
-  #photossection img {
-    height: 120px;
-    width: 90px;
   }
 
   #photossection {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Added to center the images vertically */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 
-  .text-overlay {
-    top: 60%;
+  #photossection img {
+    border-radius: 5%;
+    max-height: 300px;
+    max-width: 250px;
+    margin-top: 10px;
+  }
+}
+/* CSS styling for tablettes*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #photossection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  #photossection img {
+    border-radius: 5%;
+
+    margin-top: 10px;
+  }
+  #destinationsection {
+    margin: 10px 50px;
   }
 }

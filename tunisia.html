@@ -122,6 +122,91 @@
         align-items: center;
         align-self: flex-end;
       }
+
+      /* CSS styling for phone device */
+      @media only screen and (max-device-width: 480px) {
+        footer {
+          display: flex;
+          flex-direction: column;
+          padding-top: 5px;
+          padding-left: 10px;
+        }
+        #email {
+          width: 200px;
+          height: 33px;
+          border: none;
+        }
+        #Links {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        #Links a {
+          padding-bottom: 3px;
+          font-size: 14px;
+        }
+        #newssection {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          font-size: 14px;
+        }
+
+        #subscribebutton {
+          background-color: #519259;
+          border: none;
+          height: 33px;
+          color: antiquewhite;
+          border-radius: 5%;
+        }
+
+        #descriptionsection {
+          display: flex;
+          flex-direction: column;
+        }
+        #booking {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 30px;
+          border: black 3px solid;
+        }
+        #booking button {
+          width: 60%;
+          margin-top: 25px;
+          border-radius: 0;
+          margin-right: 80px;
+        }
+        #booking input {
+          width: 100%;
+        }
+        #booking h6 {
+          margin-top: 15px;
+        }
+      }
+      /* CSS styling for tablettes*/
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        #booking {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 30px;
+          border: black 3px solid;
+        }
+        #booking button {
+          width: 50%;
+          margin-top: 25px;
+          border-radius: 0;
+          margin-right: 180px;
+        }
+        #booking input {
+          width: 100%;
+        }
+        #booking h6 {
+          margin-top: 15px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -269,7 +354,10 @@
         <h6>Destination</h6>
         <input name="country" list="countries" placeholder="Tunisia" />
       </div>
-
+      <div>
+        <h6>Guests</h6>
+        <input name="guestsnumber" placeholder="2" />
+      </div>
       <div>
         <h6>From</h6>
         <input name="departuredate" type="date" />
@@ -278,10 +366,7 @@
         <h6>To</h6>
         <input name="arrivaldate" type="date" />
       </div>
-      <div>
-        <h6>Guests</h6>
-        <input name="guestsnumber" placeholder="2" />
-      </div>
+
       <button type="button" class="btn btn-warning">Go</button>
     </div>
     <footer>

@@ -73,7 +73,7 @@
           Book your next<br />
           destination
         </h1>
-        <div id="destpart">
+        <div id="bookingdetails">
           <div>
             <h6>Destination</h6>
             <input
@@ -95,16 +95,17 @@
 
           <div>
             <h6>From</h6>
-            <input name="departuredate" type="date" placeholder="YYYY.MM.DD" />
+            <input name="departuredate" type="date" />
           </div>
           <div>
             <h6>To</h6>
-            <input name="arrivaldate" type="date" placeholder="YYYY.MM.DD" />
+            <input name="returndate" type="date" />
           </div>
           <div>
             <h6>Guests</h6>
             <input name="guestsnumber" placeholder="2" />
           </div>
+
           <button type="button" class="btn btn-warning">Go</button>
         </div>
       </div>
@@ -142,8 +143,8 @@
             alt="picture of eiffel tower"
           />
           <div class="text-overlay">
-            <p>Paris<br />France</p>
-            <p></p>
+            <p class="cityname">Paris</p>
+            <p class="countryname">France</p>
           </div>
         </div>
         <div class="image-container">
@@ -152,8 +153,8 @@
             alt="picture of golden gate"
           />
           <div class="text-overlay">
-            <p>San Francisco<br />United States</p>
-            <p></p>
+            <p class="cityname">San Francisco</p>
+            <p class="countryname">USA</p>
           </div>
         </div>
         <div class="image-container">
@@ -162,15 +163,15 @@
             alt="picture of sydney opera"
           />
           <div class="text-overlay">
-            <p>Sydney<br />Australia</p>
-            <p></p>
+            <p class="cityname">Sydney</p>
+            <p class="countryname">Australia</p>
           </div>
         </div>
         <div class="image-container">
           <img src="./images/destinations/tokyo.jpg" alt="picture of tokyo" />
           <div class="text-overlay">
-            <p>Tokyo<br />Japan</p>
-            <p></p>
+            <p class="cityname">Tokyo</p>
+            <p class="countryname">Japan</p>
           </div>
         </div>
       </div>
@@ -180,7 +181,7 @@
         <h3>Links</h3>
         <a href="#" target="_blank">Home</a><br />
         <a href="destinations.html" target="_blank">Destinations</a><br />
-        <a href="contact.html" target="_blank">contact</a>
+        <a href="contact.html" target="_blank">Contact</a>
       </div>
       <div id="newssection">
         <h3>Newsletter</h3>

@@ -21,7 +21,6 @@ footer {
   width: 400px;
   height: 35px;
   border: none;
-  border-radius: 5%;
 }
 
 #subscribebutton {
@@ -37,53 +36,41 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 991px) {
+/* CSS styling for phone device */
+@media only screen and (max-device-width: 480px) {
   footer {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
   }
-
   #email {
-    width: 100%;
-    margin-top: 1rem;
+    width: 200px;
+    height: 33px;
+    border: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  footer {
+  #Links {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 100%;
   }
 
-  #email {
+  #Links a {
+    padding-bottom: 3px;
+    font-size: 14px;
+  }
+  #newssection {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-top: 1rem;
+    font-size: 14px;
   }
 
   #subscribebutton {
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  #email {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  #subscribebutton {
-    margin-top: 1rem;
-    width: 100%;
+    background-color: #519259;
+    border: none;
+    height: 33px;
+    color: antiquewhite;
+    border-radius: 5%;
   }
 }
