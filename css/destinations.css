@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -100,7 +99,6 @@ html {
   }
   #photossection img {
     border-radius: 5%;
-
     margin-top: 10px;
   }
   #destinationsection {
