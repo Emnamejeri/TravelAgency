@@ -16,3 +16,33 @@ Newsletter
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+
+
+<style>
+
+
+#navigationbar{display: flex;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+color: white;
+background-color: aquamarine;
+}
+#navigationbar img{display: block;}
+#navigationbar a{text-decoration: none; color: white;}
+#navigationbar button{border: none;}
+#searchpart{display: flex; flex-direction: row;}
+</style>
+
+
+<div id="navigationbar">
+<div id="searchpart">
+<img src="./icons/search-white.svg" alt="Logo">
+<p>Search</p></div>
+
+
+<img src="./icons/globe-white.svg" alt="Logo">
+<div>
+<a href="destinations.html"> Destinations</a>
+<button>Sign in</button></div>
+</div>
